@@ -1,0 +1,33 @@
+/* Import Kendo UI Material Theme */
+@import "@progress/kendo-theme-material/dist/all.css";
+
+/* Global styles */
+:root {
+  --theme-background: #f5f5f5;
+  --theme-text: #000000;
+  --theme-primary-color: #ffffff;
+  --theme-primary-hover-color: #f5f5f5;
+  --theme-primary-contrast: #000000;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: var(--theme-background);
+  color: var(--theme-text);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Dark mode styles for Kendo UI components */
+body.dark-mode {
+  --kendo-theme-primary-main: #bb86fc;
+  --kendo-theme-secondary-main: #03dac6;
+  --kendo-theme-background: #121212;
+  --kendo-theme-surface: #1e1e1e;
+  --kendo-theme-on-surface: #ffffff;
+}
+
+body.dark-mode .k-popup {
+  background-color: var(--kendo-theme-surface) !important;
+  color: var(--kendo-theme-on-surface) !important;
+}
